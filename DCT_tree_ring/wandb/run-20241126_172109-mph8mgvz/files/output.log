@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/Users/navtegh/miniconda/envs/eeg/lib/python3.11/site-packages/diffusers/configuration_utils.py", line 379, in load_config
+    config_file = hf_hub_download(
+                  ^^^^^^^^^^^^^^^^
+  File "/Users/navtegh/miniconda/envs/eeg/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/navtegh/miniconda/envs/eeg/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/navtegh/miniconda/envs/eeg/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/Users/navtegh/miniconda/envs/eeg/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1478, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/navtegh/Documents/Watermarking-diffusion-models/run_tree_ring_watermark.py", line 230, in <module>
+    main(args)
+  File "/Users/navtegh/Documents/Watermarking-diffusion-models/run_tree_ring_watermark.py", line 29, in main
+    scheduler = DPMSolverMultistepScheduler.from_pretrained(args.model_id, subfolder='scheduler', local_files_only=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/navtegh/miniconda/envs/eeg/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/navtegh/miniconda/envs/eeg/lib/python3.11/site-packages/diffusers/schedulers/scheduling_utils.py", line 150, in from_pretrained
+    config, kwargs, commit_hash = cls.load_config(
+                                  ^^^^^^^^^^^^^^^^
+  File "/Users/navtegh/miniconda/envs/eeg/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/navtegh/miniconda/envs/eeg/lib/python3.11/site-packages/diffusers/configuration_utils.py", line 406, in load_config
+    raise EnvironmentError(
+OSError: stabilityai/stable-diffusion-2-1-base does not appear to have a file named scheduler_config.json.

@@ -1,0 +1,16 @@
+{"time":"2024-11-07T18:00:49.508785-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-07T18:00:49.508817-05:00","level":"INFO","msg":"created symlink","path":"/Users/navtegh/Documents/Watermarking-diffusion-models/wandb/run-20241107_180049-ry1xf49p/logs/debug-core.log"}
+{"time":"2024-11-07T18:00:49.61728-05:00","level":"INFO","msg":"created new stream","id":"ry1xf49p"}
+{"time":"2024-11-07T18:00:49.617328-05:00","level":"INFO","msg":"stream: started","id":"ry1xf49p"}
+{"time":"2024-11-07T18:00:49.617393-05:00","level":"INFO","msg":"sender: started","stream_id":"ry1xf49p"}
+{"time":"2024-11-07T18:00:49.61738-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ry1xf49p"}}
+{"time":"2024-11-07T18:00:49.617443-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ry1xf49p"}}
+{"time":"2024-11-07T18:00:49.836677-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T18:01:06.367394-05:00","level":"INFO","msg":"stream: closing","id":"ry1xf49p"}
+{"time":"2024-11-07T18:01:06.367888-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T18:01:06.368619-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T18:01:06.86054-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T18:01:06.993578-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ry1xf49p"}}
+{"time":"2024-11-07T18:01:06.993632-05:00","level":"INFO","msg":"sender: closed","stream_id":"ry1xf49p"}
+{"time":"2024-11-07T18:01:06.993607-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ry1xf49p"}}
+{"time":"2024-11-07T18:01:06.994186-05:00","level":"INFO","msg":"stream: closed","id":"ry1xf49p"}

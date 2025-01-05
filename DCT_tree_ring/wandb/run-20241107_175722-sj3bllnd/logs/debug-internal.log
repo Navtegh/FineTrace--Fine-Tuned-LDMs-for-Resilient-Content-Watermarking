@@ -1,0 +1,16 @@
+{"time":"2024-11-07T17:57:22.604723-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-07T17:57:22.604787-05:00","level":"INFO","msg":"created symlink","path":"/Users/navtegh/Documents/Watermarking-diffusion-models/wandb/run-20241107_175722-sj3bllnd/logs/debug-core.log"}
+{"time":"2024-11-07T17:57:22.820192-05:00","level":"INFO","msg":"created new stream","id":"sj3bllnd"}
+{"time":"2024-11-07T17:57:22.820238-05:00","level":"INFO","msg":"stream: started","id":"sj3bllnd"}
+{"time":"2024-11-07T17:57:22.820318-05:00","level":"INFO","msg":"sender: started","stream_id":"sj3bllnd"}
+{"time":"2024-11-07T17:57:22.820375-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"sj3bllnd"}}
+{"time":"2024-11-07T17:57:22.82035-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"sj3bllnd"}}
+{"time":"2024-11-07T17:57:23.015099-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T17:57:38.022987-05:00","level":"INFO","msg":"stream: closing","id":"sj3bllnd"}
+{"time":"2024-11-07T17:57:38.023351-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T17:57:38.02422-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T17:57:38.437379-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T17:57:38.657925-05:00","level":"INFO","msg":"sender: closed","stream_id":"sj3bllnd"}
+{"time":"2024-11-07T17:57:38.657896-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"sj3bllnd"}}
+{"time":"2024-11-07T17:57:38.657925-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"sj3bllnd"}}
+{"time":"2024-11-07T17:57:38.658531-05:00","level":"INFO","msg":"stream: closed","id":"sj3bllnd"}

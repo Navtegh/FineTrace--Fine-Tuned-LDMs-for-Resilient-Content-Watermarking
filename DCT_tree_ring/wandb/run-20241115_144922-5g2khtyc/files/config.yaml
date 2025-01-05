@@ -1,0 +1,104 @@
+_wandb:
+    value:
+        cli_version: 0.18.7
+        m: []
+        python_version: 3.11.5
+        t:
+            "1":
+                - 2
+                - 1
+                - 3
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 55
+                - 83
+            "2":
+                - 2
+                - 1
+                - 3
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 55
+                - 83
+            "3":
+                - 13
+                - 15
+                - 23
+                - 55
+            "4": 3.11.5
+            "5": 0.18.7
+            "6": 4.46.2
+            "8":
+                - 5
+            "12": 0.18.7
+            "13": darwin-arm64
+brightness_factor:
+    value: null
+crop_ratio:
+    value: null
+crop_scale:
+    value: null
+dataset:
+    value: Gustavosta/Stable-Diffusion-Prompts
+end:
+    value: 1000
+gaussian_blur_r:
+    value: null
+gaussian_std:
+    value: null
+gen_seed:
+    value: 0
+guidance_scale:
+    value: 7.5
+image_length:
+    value: 512
+jpeg_ratio:
+    value: null
+max_num_log_image:
+    value: 100
+model_id:
+    value: stabilityai/stable-diffusion-2-1-base
+num_images:
+    value: 1
+num_inference_steps:
+    value: 50
+r_degree:
+    value: null
+rand_aug:
+    value: 0
+reference_model:
+    value: ViT-g-14
+reference_model_pretrain:
+    value: laion2b_s12b_b42k
+run_name:
+    value: no_attack
+start:
+    value: 0
+test_num_inference_steps:
+    value: 50
+w_channel:
+    value: 3
+w_injection:
+    value: complex
+w_mask_shape:
+    value: circle
+w_measurement:
+    value: l1_complex
+w_pattern:
+    value: ring
+w_pattern_const:
+    value: 0
+w_radius:
+    value: 10
+w_seed:
+    value: 999999
+with_tracking:
+    value: true

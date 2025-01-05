@@ -1,0 +1,7 @@
+fatal: not a git repository (or any parent up to mount point /w)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 72946 ON gpunode33 CANCELLED AT 2024-12-17T14:56:29 ***
+slurmstepd: error: *** STEP 72946.0 ON gpunode33 CANCELLED AT 2024-12-17T14:56:29 ***
+WARNING:torch.distributed.elastic.agent.server.api:Received 15 death signal, shutting down workers
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 2256462 closing signal SIGTERM

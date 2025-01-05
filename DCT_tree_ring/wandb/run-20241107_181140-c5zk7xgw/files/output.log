@@ -1,0 +1,54 @@
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with:
+```
+pip install accelerate
+```
+.
+/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/diffusers/pipelines/pipeline_loading_utils.py:221: FutureWarning: You are loading the variant fp16 from stabilityai/stable-diffusion-2-1-base via `revision='fp16'` even though you can load it via `variant=`fp16`. Loading model variants via `revision='fp16'` is deprecated and will be removed in diffusers v1. Please use `variant='fp16'` instead.
+  warnings.warn(
+Loading pipeline components...:  20%|██████████████▊                                                           | 1/5 [00:00<00:02,  1.53it/s]An error occurred while trying to fetch /Users/navtegh/.cache/huggingface/hub/models--stabilityai--stable-diffusion-2-1-base/snapshots/1f758383196d38df1dfe523ddb1030f2bfab7741/unet: Error no file named diffusion_pytorch_model.safetensors found in directory /Users/navtegh/.cache/huggingface/hub/models--stabilityai--stable-diffusion-2-1-base/snapshots/1f758383196d38df1dfe523ddb1030f2bfab7741/unet.
+Defaulting to unsafe serialization. Pass `allow_pickle=False` to raise an error instead.
+Loading pipeline components...:  60%|████████████████████████████████████████████▍                             | 3/5 [00:11<00:07,  3.72s/it]An error occurred while trying to fetch /Users/navtegh/.cache/huggingface/hub/models--stabilityai--stable-diffusion-2-1-base/snapshots/1f758383196d38df1dfe523ddb1030f2bfab7741/vae: Error no file named diffusion_pytorch_model.safetensors found in directory /Users/navtegh/.cache/huggingface/hub/models--stabilityai--stable-diffusion-2-1-base/snapshots/1f758383196d38df1dfe523ddb1030f2bfab7741/vae.
+Defaulting to unsafe serialization. Pass `allow_pickle=False` to raise an error instead.
+Loading pipeline components...: 100%|██████████████████████████████████████████████████████████████████████████| 5/5 [00:12<00:00,  2.44s/it]
+You have disabled the safety checker for <class 'inverse_stable_diffusion.InversableStableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+Pipelines loaded with `dtype=torch.float16` cannot run with `cpu` device. It is not recommended to move them to `cpu` as running them will fail. Please make sure to use an accelerator to run the pipeline in inference, due to the lack of support for`float16` operations on this device in PyTorch. Please, remove the `torch_dtype=torch.float16` argument, or use another device for inference.
+Pipelines loaded with `dtype=torch.float16` cannot run with `cpu` device. It is not recommended to move them to `cpu` as running them will fail. Please make sure to use an accelerator to run the pipeline in inference, due to the lack of support for`float16` operations on this device in PyTorch. Please, remove the `torch_dtype=torch.float16` argument, or use another device for inference.
+Pipelines loaded with `dtype=torch.float16` cannot run with `cpu` device. It is not recommended to move them to `cpu` as running them will fail. Please make sure to use an accelerator to run the pipeline in inference, due to the lack of support for`float16` operations on this device in PyTorch. Please, remove the `torch_dtype=torch.float16` argument, or use another device for inference.
+open_clip_pytorch_model.bin: 100%|██████████████████████████████████████████████████████████████████████| 5.47G/5.47G [01:04<00:00, 84.7MB/s]
+README.md: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 777/777 [00:00<00:00, 4.60MB/s]
+train.parquet: 100%|████████████████████████████████████████████████████████████████████████████████████| 9.23M/9.23M [00:00<00:00, 34.3MB/s]
+eval.parquet: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1.03M/1.03M [00:00<00:00, 13.9MB/s]
+Generating train split: 100%|██████████████████████████████████████████████████████████████| 73718/73718 [00:00<00:00, 1111535.04 examples/s]
+Generating test split: 100%|█████████████████████████████████████████████████████████████████| 8192/8192 [00:00<00:00, 2244414.29 examples/s]
+Traceback (most recent call last):
+  File "/Users/navtegh/Documents/Watermarking-diffusion-models/run_tree_ring_watermark.py", line 230, in <module>
+    main(args)
+  File "/Users/navtegh/Documents/Watermarking-diffusion-models/run_tree_ring_watermark.py", line 47, in main
+    text_embeddings = pipe.get_text_embedding(tester_prompt)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/Users/navtegh/Documents/Watermarking-diffusion-models/inverse_stable_diffusion.py", line 87, in get_text_embedding
+    text_embeddings = self.text_encoder(text_input_ids.to(self.device))[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/transformers/models/clip/modeling_clip.py", line 1050, in forward
+    return self.text_model(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/transformers/models/clip/modeling_clip.py", line 954, in forward
+    encoder_outputs = self.encoder(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/transformers/models/clip/modeling_clip.py", line 877, in forward
+    layer_outputs = encoder_layer(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/transformers/models/clip/modeling_clip.py", line 607, in forward
+    hidden_states = self.layer_norm1(hidden_states)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/torch/nn/modules/normalization.py", line 189, in forward
+    return F.layer_norm(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/torch/nn/functional.py", line 2503, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: "LayerNormKernelImpl" not implemented for 'Half'

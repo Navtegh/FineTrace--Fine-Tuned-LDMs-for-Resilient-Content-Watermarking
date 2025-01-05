@@ -1,0 +1,8 @@
+{"time":"2024-11-07T17:35:14.785564-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-07T17:35:14.78564-05:00","level":"INFO","msg":"created symlink","path":"/Users/navtegh/Documents/Watermarking-diffusion-models/wandb/run-20241107_173514-w1oot8ed/logs/debug-core.log"}
+{"time":"2024-11-07T17:35:14.901401-05:00","level":"INFO","msg":"created new stream","id":"w1oot8ed"}
+{"time":"2024-11-07T17:35:14.901461-05:00","level":"INFO","msg":"stream: started","id":"w1oot8ed"}
+{"time":"2024-11-07T17:35:14.90162-05:00","level":"INFO","msg":"sender: started","stream_id":"w1oot8ed"}
+{"time":"2024-11-07T17:35:14.901604-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"w1oot8ed"}}
+{"time":"2024-11-07T17:35:14.901752-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"w1oot8ed"}}
+{"time":"2024-11-07T17:35:15.113966-05:00","level":"INFO","msg":"Starting system monitor"}

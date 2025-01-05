@@ -1,0 +1,16 @@
+{"time":"2024-11-26T17:21:09.104348-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-26T17:21:09.104401-05:00","level":"INFO","msg":"created symlink","path":"/Users/navtegh/Documents/Watermarking-diffusion-models/wandb/run-20241126_172109-mph8mgvz/logs/debug-core.log"}
+{"time":"2024-11-26T17:21:09.221433-05:00","level":"INFO","msg":"created new stream","id":"mph8mgvz"}
+{"time":"2024-11-26T17:21:09.221733-05:00","level":"INFO","msg":"stream: started","id":"mph8mgvz"}
+{"time":"2024-11-26T17:21:09.221877-05:00","level":"INFO","msg":"handler: started","stream_id":"mph8mgvz"}
+{"time":"2024-11-26T17:21:09.221867-05:00","level":"INFO","msg":"sender: started","stream_id":"mph8mgvz"}
+{"time":"2024-11-26T17:21:09.22191-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"mph8mgvz"}
+{"time":"2024-11-26T17:21:09.407714-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-26T17:21:09.583913-05:00","level":"INFO","msg":"stream: closing","id":"mph8mgvz"}
+{"time":"2024-11-26T17:21:09.583972-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-26T17:21:09.584473-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-26T17:21:10.261552-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-26T17:21:10.368977-05:00","level":"INFO","msg":"handler: closed","stream_id":"mph8mgvz"}
+{"time":"2024-11-26T17:21:10.369021-05:00","level":"INFO","msg":"sender: closed","stream_id":"mph8mgvz"}
+{"time":"2024-11-26T17:21:10.369011-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mph8mgvz"}
+{"time":"2024-11-26T17:21:10.369357-05:00","level":"INFO","msg":"stream: closed","id":"mph8mgvz"}

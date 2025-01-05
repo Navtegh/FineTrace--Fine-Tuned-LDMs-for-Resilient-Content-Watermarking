@@ -1,0 +1,44 @@
+Couldn't connect to the Hub: 404 Client Error. (Request ID: Root=1-672d520c-4920d39f101b118a16678a0f;c345bf06-6278-4f2d-819c-9a585daf7779)
+
+Revision Not Found for url: https://huggingface.co/api/models/stabilityai/stable-diffusion-2-1-base/revision/fp32.
+Invalid rev id: fp32.
+Will try to load from local cache.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/api/models/stabilityai/stable-diffusion-2-1-base/revision/fp32
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/diffusers/pipelines/pipeline_utils.py", line 1282, in download
+    info = model_info(pretrained_model_name, token=token, revision=revision)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 2541, in model_info
+    hf_raise_for_status(r)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 413, in hf_raise_for_status
+    raise _format(RevisionNotFoundError, message, response) from e
+huggingface_hub.errors.RevisionNotFoundError: 404 Client Error. (Request ID: Root=1-672d520c-4920d39f101b118a16678a0f;c345bf06-6278-4f2d-819c-9a585daf7779)
+
+Revision Not Found for url: https://huggingface.co/api/models/stabilityai/stable-diffusion-2-1-base/revision/fp32.
+Invalid rev id: fp32
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/navtegh/Documents/Watermarking-diffusion-models/run_tree_ring_watermark.py", line 230, in <module>
+    main(args)
+  File "/Users/navtegh/Documents/Watermarking-diffusion-models/run_tree_ring_watermark.py", line 30, in main
+    pipe = InversableStableDiffusionPipeline.from_pretrained(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/diffusers/pipelines/pipeline_utils.py", line 725, in from_pretrained
+    cached_folder = cls.download(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/diffusers/pipelines/pipeline_utils.py", line 1479, in download
+    raise EnvironmentError(
+OSError: Cannot load model stabilityai/stable-diffusion-2-1-base: model is not cached locally and an error occurred while trying to fetch metadata from the Hub. Please check out the root cause in the stacktrace above.
